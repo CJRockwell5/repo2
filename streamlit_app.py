@@ -9,11 +9,15 @@ if (sug_high + sug_med + sug_low) == 100:
     st.text('Best outcome: Botrytis Mold, chance:')
     st.text(bot_chance)
     if bot_chance*95.2*275000 < (100 - bot_chance)*95.2*35000:
-      st.text('Benifits do not outweight downside, harvest now')
+      st.text('Benefits do not outweight downside, harvest now.')
+    else:
+      st.text('Benefits outweight downside, wait for botrytis mold.')
   else:
     st.text('Best outcome: Medium and High Sugar, chance:')
     st.text(sug_med + sug_high)
     if (sug_med + sug_high)*95.2*(125000 + 117500) < sug_low*95.2*80000:
-      st.text('Benifits do not outweight downside, harvest now')
+      st.text('Benefits do not outweight downside, harvest now.')
+    else:
+      st.text('Benefits outweight downside, wait for additional sweetness.')
 else:
   st.text('High, Medium, and Low have to add up to 100')
