@@ -9,6 +9,8 @@ if image_file is not None:
      file_details = {"filename":image_file.name, "filetype":image_file.type,
      "filesize":image_file.size}
      st.write(file_details)
+     
+     curret_xray = load_image(image_file)
 
      # To View Uploaded Image
-     st.image(load_image(image_file))
+     st.image(curret_xray)
