@@ -4,7 +4,7 @@ st.subheader('Group 5')
 
 image_file = st.file_uploader("Upload a X-ray", type=["png","jpg","jpeg"])
 if image_file is not None:
-     input_image = uploaded_file.getvalue()
+     image_file = uploaded_file.getvalue()
      
      # To See details
      file_details = {"filename":image_file.name, "filetype":image_file.type,
