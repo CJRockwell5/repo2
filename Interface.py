@@ -15,4 +15,4 @@ if image_file is not None:
      curret_xray = Image.open(image_file)
 
      # To View Uploaded Image
-     st.Image(curret_xray, width=250)
+     st.image(curret_xray, width=250)
