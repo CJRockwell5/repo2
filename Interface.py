@@ -11,4 +11,4 @@ if image_file is not None:
      st.write(file_details)
 
      # To View Uploaded Image
-     st.image(load_image(image_file),width=250)
+     st.image(load_image(image_file))
