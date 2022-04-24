@@ -13,4 +13,4 @@ if image_file is not None:
      curret_xray = load_image(image_file)
 
      # To View Uploaded Image
-     st.image(load_image(image_file),width=250)
+     st.Image(load_image(image_file),width=250)
