@@ -10,7 +10,7 @@ if image_file is not None:
      "filesize":image_file.size}
      st.write(file_details)
      
-     curret_xray = load_image(image_file)
+     curret_xray = image.open(image_file)
 
      # To View Uploaded Image
-     st.Image(load_image(image_file),width=250)
+     st.image(curret_xray, width=250)
