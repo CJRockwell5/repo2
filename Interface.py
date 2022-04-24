@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import image
+from PIL import Image
 
 st.header('Pneumonia Classification')
 st.subheader('Group 5')
@@ -12,7 +12,7 @@ if image_file is not None:
      "filesize":image_file.size}
      st.write(file_details)
      
-     curret_xray = image.open(image_file)
+     curret_xray = Image.open(image_file)
 
      # To View Uploaded Image
-     st.image(curret_xray, width=250)
+     st.Image(curret_xray, width=250)
