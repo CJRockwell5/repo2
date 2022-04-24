@@ -1,4 +1,6 @@
 import streamlit as st
+from PIL import Image
+
 st.header('Pneumonia Classification')
 st.subheader('Group 5')
 
